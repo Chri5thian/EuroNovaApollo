@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment directories
+venv/
+myenv/
+
+# Django-specific files
+*.log
+db.sqlite3
+
+# Environment variables file
+.env
+
+# IDE-specific directories
+.idea/
+.vscode/
+
+# macOS-specific files
+.DS_Store
+
+# Backup files
+*.bak
+
+# PyInstaller
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
