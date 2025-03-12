@@ -1,21 +1,154 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark grey-black */
+    color: #ddd; /* Light grey text */
     text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-h1 {
-    color: #0056b3;
+/* Headings */
+h1, h2, h3 {
+    color: #ffffff; /* White */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    background: #222; /* Slightly darker grey */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #007bff;
+    color: #00bcd4; /* Cyan accent */
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
 }
 
+nav a:hover {
+    color: #ffcc00; /* Gold hover effect */
+}
+
+/* Buttons */
+button, .btn {
+    background: #333; /* Dark grey */
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background: #444; /* Slightly lighter grey */
+    transform: scale(1.05);
+}
+
+/* Card Styling */
+.card {
+    background: #252525; /* Dark grey */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Footer */
 footer {
-    margin-top: 20px;
-    font-size: 0.8em;
+    background: #181818;
+    color: #888;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* Forms */
+input, textarea {
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Contact Section Styling */
+.contact-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent; /* Ensure background is transparent */
+    /* z-index of background should be lower than the contact box */
+    position: relative;
+    
+}
+
+/* Hover effect */
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Typography */
+.contact-box h1 {
+    font-size: 2em;
+    color: #fff; /* White text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1.1em;
+    color: #ddd; /* Light grey */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-box {
+        max-width: 90%;
+        padding: 20px;
+    }
 }
