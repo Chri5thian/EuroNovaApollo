@@ -7,6 +7,7 @@ def home(request):
     context = {
         'posts': Post.objects.all()
     }
+    
     return render(request, 'home.html', context)
 
 def about(request):
@@ -14,3 +15,4 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+s

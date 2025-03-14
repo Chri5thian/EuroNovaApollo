@@ -43,8 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
+    'crispy_bootstrap5', 
     'EuroNovaApollo',  # Add the app to the list of installed apps
-    'blog',  # Add the blog app to the list of installed apps	
+    'blog.apps.BlogConfig',  # Add the blog app to the list of installed apps
+    'users.apps.UsersConfig',  # Add the users app to the list of installed apps
 ]
 
 MIDDLEWARE = [
@@ -124,6 +127,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'EuroNovaApollo/static'),
