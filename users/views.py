@@ -1,5 +1,6 @@
 from django.shortcuts import render , redirect
 from django.contrib.auth.forms import UserCreationForm
+
 from django.contrib import messages
 from .forms import UserRegisterForm
 
@@ -15,3 +16,10 @@ def register(request):
     else:
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
+
+
+def login(request):
+    return render(request, 'users/login.html', {'title': 'Login'})
+
+def logout(request):
+    return render(request, 'users/logout.html' , {'title': 'Logout'})
