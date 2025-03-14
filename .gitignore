@@ -13,6 +13,9 @@ db.sqlite3
 # Environment variables file
 .env
 
+# Worspace specific files
+.code-workspace
+
 # IDE-specific directories
 .idea/
 .vscode/
