@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'EuroNovaApollo',  # Add the app to the list of installed apps
+    'blog',  # Add the blog app to the list of installed apps	
 ]
 
 MIDDLEWARE = [
